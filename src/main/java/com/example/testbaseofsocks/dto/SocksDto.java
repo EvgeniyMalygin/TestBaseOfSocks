@@ -3,7 +3,6 @@ package com.example.testbaseofsocks.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Objects;
-
 public class SocksDto {
     @JsonProperty("color")
     String color;
@@ -16,6 +15,33 @@ public class SocksDto {
     public SocksDto(String color, Double cottonPart, Integer quantity) {
         this.color = color;
         this.cottonPart = cottonPart;
+        this.quantity = quantity;
+    }
+
+    public SocksDto() {
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public Double getCottonPart() {
+        return cottonPart;
+    }
+
+    public void setCottonPart(Double cottonPart) {
+        this.cottonPart = cottonPart;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
 

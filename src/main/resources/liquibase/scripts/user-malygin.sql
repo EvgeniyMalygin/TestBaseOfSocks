@@ -4,6 +4,6 @@ CREATE TABLE socks
 (
     socks_id    SERIAL PRIMARY KEY,
     color       varchar,
-    cottonPart  numeric,
+    cotton      integer,
     quantity    integer
 );

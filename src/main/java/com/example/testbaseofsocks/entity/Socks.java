@@ -1,9 +1,7 @@
 package com.example.testbaseofsocks.entity;
 
-import jakarta.persistence.*;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.annotation.Id;
-
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
@@ -11,7 +9,6 @@ import java.util.Objects;
 @Table(name = "socks")
 public class Socks {
 
-    @jakarta.persistence.Id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "socks_id", nullable = false)
@@ -19,7 +16,7 @@ public class Socks {
 
     @Column(name = "color")
     String color;
-    @Column(name = "cottonPart")
+    @Column(name = "cotton")
     Double cottonPart;
 
     @Column(name = "quantity")
